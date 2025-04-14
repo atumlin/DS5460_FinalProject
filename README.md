@@ -222,7 +222,6 @@ To find the overall best performance among different adapted linear regression m
 - **Linear Regression with Polynomial Feature Expansion**
 - **Ridge Regression with Polynomial Feature Expansion**
 - **Bagging Ensemble of Linear Regression Models** 
-- **Boosting with Linear Base Learners**
 
 ![LR Model Performance Comparison Without Boosting](docs/images/LR1_models_results.png)
 
