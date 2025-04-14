@@ -224,8 +224,7 @@ To find the overall best performance among different adapted linear regression m
 - **Bagging Ensemble of Linear Regression Models** 
 - **Boosting with Linear Base Learners**
 
-![LR Model Performance Comparison](docs/images/LR1_models_results.png)
-![LR Model Performance Comparison Without Boosting](docs/images/LR2_models_results.png)
+![LR Model Performance Comparison Without Boosting](docs/images/LR1_models_results.png)
 
 Our dataset exhibits strong linear correlations, making linear regression a highly effective modeling choice compared other modeling methods we tried. 
 
