@@ -213,7 +213,7 @@ You can find training and evaluation scripts in [`ModelComparison.ipynb`]( Model
 
 ## Final Results and Model
 
-To find the overall best performance among different adapted linear regression models, we evaluated eight core models using PySpark ML Pipelines:
+To find the overall best performance among different adapted linear regression models, we evaluated seven core models using PySpark ML Pipelines:
 
 - **Vanilla Linear Regression**
 - **Lasso Regression (L1 Regularization)**
