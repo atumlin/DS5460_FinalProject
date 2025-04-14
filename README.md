@@ -213,7 +213,23 @@ You can find training and evaluation scripts in [`ModelComparison.ipynb`]( Model
 
 ## Final Results and Model
 
+To find the overall best performance among different adapted linear regression models, we evaluated eight core models using PySpark ML Pipelines:
 
+- **Vanilla Linear Regression**
+- **Lasso Regression (L1 Regularization)**
+- **Ridge Regression (L2 Regularization)**
+- **Elastic Net Regression (L1 + L2 Regularization)**
+- **Linear Regression with Polynomial Feature Expansion**
+- **Ridge Regression with Polynomial Feature Expansion**
+- **Bagging Ensemble of Linear Regression Models** 
+- **Boosting with Linear Base Learners**
+
+![LR Model Performance Comparison](docs/images/LR1_models_results.png)
+![LR Model Performance Comparison Without Boosting](docs/images/LR2_models_results.png)
+
+Our dataset exhibits strong linear correlations, making linear regression a highly effective modeling choice compared other modeling methods we tried. 
+
+However, performance was further enhanced by incorporating polynomial feature expansion and bagging, both of which achieved the highest accuracy. Among them, polynomial feature expansion proved to be the most effective overall, offering the best trade-off between predictive performance, computational efficiency, and implementation cost. It allowed us to capture subtle nonlinear interactions while preserving model simplicity and interpretability.
 
 ## Resources 
 > S. Lovett et al., “OPFData: Large-scale datasets for AC optimal power flow with topological perturbations,” arXiv preprint arXiv:2406.07234, Jun. 2024. https://doi.org/10.48550/arXiv.2406.07234
